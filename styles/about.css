@@ -550,6 +550,55 @@ body.no-scroll
 {
 	overflow: hidden;
 }
+.stagger_stats,
+.stagger_team
+{
+	translate: none;
+	rotate: none;
+	scale: none;
+	-webkit-transform: rotateY(12deg) rotateX(5deg);
+	-moz-transform: rotateY(12deg) rotateX(5deg);
+	-ms-transform: rotateY(12deg) rotateX(5deg);
+	-o-transform: rotateY(12deg) rotateX(5deg);
+	transform: rotateY(12deg) rotateX(5deg);
+	opacity: 0;
+}
+*.reveal_1
+{
+	translate: none;
+	rotate: none;
+	scale: none;
+	-webkit-transform: rotateY(12deg) rotateX(5deg);
+	-moz-transform: rotateY(12deg) rotateX(5deg);
+	-ms-transform: rotateY(12deg) rotateX(5deg);
+	-o-transform: rotateY(12deg) rotateX(5deg);
+	transform: rotateY(12deg) rotateX(5deg);
+	opacity: 0;
+}
+*.reveal_2
+{
+	translate: none;
+	rotate: none;
+	scale: none;
+	-webkit-transform: rotateY(12deg) rotateX(5deg);
+	-moz-transform: rotateY(12deg) rotateX(5deg);
+	-ms-transform: rotateY(12deg) rotateX(5deg);
+	-o-transform: rotateY(12deg) rotateX(5deg);
+	transform: rotateY(12deg) rotateX(5deg);
+	opacity: 0;
+}
+.reveal_stagger > *, .reveal_stagger_test
+{
+	translate: none;
+	rotate: none;
+	scale: none;
+	-webkit-transform: rotateY(12deg) rotateX(5deg);
+	-moz-transform: rotateY(12deg) rotateX(5deg);
+	-ms-transform: rotateY(12deg) rotateX(5deg);
+	-o-transform: rotateY(12deg) rotateX(5deg);
+	transform: rotateY(12deg) rotateX(5deg);
+	opacity: 0;
+}
 
 /*********************************
 3. Menu

@@ -30,11 +30,7 @@ $(document).ready(function()
 	*/
 	
 	initHeader();
-	initHeroSlider();
 	initHamburgerButton();
-	initWhyUsSlider();
-	initTestimonialsSlider();
-	initLightbox();
 	initForm();
 	initReveal();
 	initWow();
@@ -84,63 +80,6 @@ $(document).ready(function()
 
 	/* 
 
-	3. Hero Slider
-
-	*/
-
-	function initHeroSlider()
-	{
-		if($('.hero-slider').length)
-		{
-			let isAnimating = false;
-			const heroSlider = $('.hero-slider');
-			heroSlider.owlCarousel(
-			{
-				items:1,
-				animateOut: 'owl-shrink-out',
-   				animateIn: '',
-				autoplay: true,
-				touchDrag: false,
-				loop: true,
-				mouseDrag: false,
-				dotsContainer: 'hero-slider-dots'
-			});
-
-			heroSlider.on('translate.owl.carousel', function(e)
-			{
-				isAnimating = true;
-			});
-			heroSlider.on('translated.owl.carousel', function(e)
-			{
-				isAnimating = false;
-			});
-
-			/* Change active class for dots when slide changes by nav or touch */
-			heroSlider.on('changed.owl.carousel', function(event)
-			{
-				$('.hero-slider-dot').removeClass('active');
-				$('.hero-slider-dot').eq(event.page.index).addClass('active');
-			});
-
-			/* Custom dots events */
-			if($('.hero-slider-dot').length)
-			{
-				$('.hero-slider-dot').on('click', function()
-				{
-					if(!isAnimating)
-					{
-						$('.hero-slider-dot').removeClass('active');
-						$(this).addClass('active');
-						heroSlider.trigger('to.owl.carousel', [$(this).index(), 300]);
-					}
-					
-				});
-			}
-		}
-	}
-
-	/* 
-
 	4. Init Hamburger Button
 
 	*/
@@ -152,108 +91,6 @@ $(document).ready(function()
 		{
 			hamburgerBtn.classList.toggle('is-active');
 		});
-	}
-
-	/* 
-
-	5. Init Why Us Slider
-
-	*/
-
-	function initWhyUsSlider()
-	{
-		if($('.why_us_slider').length)
-		{
-			const slider = $('.why_us_slider');
-			slider.owlCarousel(
-			{
-				items: 1,
-				animateOut: 'owl-shrink-out',
-   				animateIn: '',
-				loop: true,
-				autoplay: true,
-				touchDrag: false,
-				mouseDrag: false,
-				dots: true,
-				nav: false
-			});
-		}
-	}
-
-	/* 
-
-	6. Init Testimonials Slider
-
-	*/
-
-	function initTestimonialsSlider()
-	{
-		if($('.testimonials_slider').length)
-		{
-			const testSlider = $('.testimonials_slider');
-			testSlider.owlCarousel(
-			{
-				items: 3,
-				loop: true,
-				margin: 20,
-				autoplay: false,
-				nav: false,
-				dots: false,
-				responsive:
-				{
-					0:
-					{
-						items: 1
-					},
-					768:
-					{
-						items: 2
-					},
-					992:
-					{
-						items: 3
-					}
-				}
-			});
-
-			if($('.testimonials_nav_prev').length)
-			{
-				let btn_prev = $('.testimonials_nav_prev');
-				btn_prev.on('click', function()
-				{
-					testSlider.trigger('prev.owl.carousel');
-				});
-			};
-
-			if($('.testimonials_nav_next').length)
-			{
-				let btn_next = $('.testimonials_nav_next');
-				btn_next.on('click', function()
-				{
-					testSlider.trigger('next.owl.carousel')
-				});
-			};
-		}
-	}
-
-	/* 
-
-	7. Init Lightbox
-
-	*/
-
-	function initLightbox()
-	{
-		if($('.gallery_container').length)
-		{
-			const lightbox = new PhotoSwipeLightbox(
-			{
-				gallery: ".gallery_container",
-				children: "li",
-				pswpModule: PhotoSwipe
-			});
-			lightbox.init();
-		}
 	}
 
 	/* 
@@ -309,19 +146,8 @@ $(document).ready(function()
 			});
 		};
 
-		set_stagger('.stagger_classes');
-		set_stagger('.stagger_feature');
 		set_stagger('.stagger_stats');
 		set_stagger('.stagger_team');
-		set_stagger('.stagger_pricing');
-		set_stagger('.stagger_why_us');
-		set_stagger('.stagger_test');
-		set_stagger('.stagger_stars');
-		set_stagger('.stagger_stars_2');
-		set_stagger('.stagger_stars_3');
-		set_stagger('.stagger_stars_4');
-		set_stagger('.stagger_gallery');
-		set_stagger('.stagger_blog');
 
 		let reveal_1 = $('.reveal_1');
 		reveal_1.each((ind, ele_1)=>
@@ -391,7 +217,6 @@ $(document).ready(function()
         });
 
         let reveal_left = $('.reveal_left');
-        console.log(reveal_left.length);
 		ScrollTrigger.batch(reveal_left,
         {
             start: "100px bottom",
