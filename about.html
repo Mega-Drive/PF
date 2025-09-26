@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PulseFit</title>
+<link rel="icon" href="images/favicon.png">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="PulseFit Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-5.3.3/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="plugins/font-awesome-v6.5.1/css/fontawesome.min.css">
+<link rel="stylesheet" type="text/css" href="plugins/font-awesome-v6.5.1/css/light.css">
+<link rel="stylesheet" type="text/css" href="plugins/font-awesome-v6.5.1/css/regular.css">
+<link rel="stylesheet" type="text/css" href="plugins/font-awesome-v6.5.1/css/solid.css">
+<link rel="stylesheet" type="text/css" href="plugins/font-awesome-v6.5.1/css/brands.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="plugins/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" type="text/css" href="plugins/photoswipe/photoswipe.css">
+<link rel="stylesheet" type="text/css" href="plugins/lity-2.4.1/lity.min.css">
+<link rel="stylesheet" type="text/css" href="styles/about.css">
+<link rel="stylesheet" type="text/css" href="styles/about_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+	
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header_inner d-flex flex-row align-items-center justify-content-between">
+            <div class="header-logo">
+                <a href="#" class="d-flex flex-row align-items-center"><img src="images/logo.svg" alt="" aria-hidden="true"><span>Pulse<span>Fit</span></span></a>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+                <ul class="d-flex flex-row align-items-center">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Classes</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Join now button -->
+            <div class="header-extra">
+                <a href="#" class="header-button">Join Now!</a>
+            </div>
+
+            <!-- Hamburger button -->
+            <button id="hamburger" class="hamburger hamburger--squeeze menu-button" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- MENU -->
+    <nav class="menu" aria-label="Mobile">
+        <div class="menu-container">
+            <img src="images/menu.png" alt="Portrait of focused fitness woman">
+            <div class="menu-content d-flex flex-column align-items-center">
+                <!-- Menu Navigation -->
+                <ul class="menu-nav-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Classes</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <!-- Menu CTA button -->
+                 <div class="menu-btn">
+                    <a href="#" class="primary-button menu-cta-button d-flex flex-row align-items-center">
+                        <span class="button-arrow trans_300"><i class="fa-thin fa-chevron-right"></i><i class="fa-thin fa-chevron-right"></i></span>
+                        <span class="button-text trans_300">get started</span>
+                    </a>
+                 </div>
+            </div>
+            <!-- Menu Social Links -->
+            <ul class="menu-social d-flex flex-row align-items-center justify-content-center" aria-label="Social media">
+                <li><a href="#" aria-label="Twitter-X"><i class="fa-brands fa-x-twitter trans_300"></i></a></li>
+                <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook trans_300"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram trans_300"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+    <!-- HERO -->
+    <header class="hero" id="hero">
+        <div class="hero-inner">
+            <!-- Hero content -->
+             <div class="hero-background">
+                <img src="images/about-hero.webp" alt="Sporty attractive woman training in a morning gym.">
+            </div>
+            <div class="hero_content_container">
+                <div class="hero-background">
+                    <img src="images/about-hero.webp" alt="Sporty attractive woman training in a morning gym.">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="hero_content text-center">
+                                <h1 class="hero-title">About Us</h1>
+                                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                                    <ol>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li aria-current="page">About</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+        <div class="container">
+            <div class="row row-eq-height">
+                <div class="col-lg-6">
+                    <div class="about_container d-flex flex-column justify-content-center">
+                        <div class="section_title_container">
+                            <h2 class="section-title reveal_left" id="about-heading">We're not just a gym — we’re a movement.</h2>
+                            <p class="section-subtext reveal_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+                            <a href="#" class="primary-button about_button trans_300 reveal_left">
+                                <span class="button-arrow trans_300"><i class="fa-thin fa-chevron-right"></i><i class="fa-thin fa-chevron-right"></i></span>
+                                <span class="button-text trans_300">get started</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about_pics_container d-flex flex-row align-items-center">
+                        <div class="about_pic reveal_right">
+                            <div>
+                                <img src="images/about-pic-2.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="about_pic reveal_right">
+                            <div>
+                                <img src="images/about-pic-1.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="about_pic reveal_right">
+                            <div>
+                                <img src="images/about-pic-3.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="primary-button about_button_2 trans_300 reveal_2">
+                        <span class="button-arrow trans_300"><i class="fa-thin fa-chevron-right"></i><i class="fa-thin fa-chevron-right"></i></span>
+                        <span class="button-text trans_300">get started</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats section_dark" id="stats" aria-labelledby="stats-heading">
+        <div class="stats_inner">
+            <div class="container">
+                <div class="row stats_row">
+
+                    <!-- Stats item -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="stat d-flex flex-column align-items-center text-center stagger_stats">
+                            <div class="stat_icon_container d-flex flex-column align-items-center justify-content-center">
+                                <img src="images/features_8.svg" alt="An icon showing happy pulsefit gym members.">
+                            </div>
+                            <h3>24/7</h3>
+                            <p>Gym Access</p>
+                        </div>
+                    </div>
+
+                    <!-- Stats item -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="stat d-flex flex-column align-items-center text-center stagger_stats">
+                            <div class="stat_icon_container d-flex flex-column align-items-center justify-content-center">
+                                <img src="images/features_7.svg" alt="An icon showing strength of a diamond.">
+                            </div>
+                            <h3>1M+</h3>
+                            <p>Pounds Lifted</p>
+                        </div>
+                    </div>
+
+                    <!-- Stats item -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="stat d-flex flex-column align-items-center text-center stagger_stats">
+                            <div class="stat_icon_container d-flex flex-column align-items-center justify-content-center">
+                                <img src="images/features_6.svg" alt="An icon showing a full battery.">
+                            </div>
+                            <h3>200+</h3>
+                            <p>Weekly Classes</p>
+                        </div>
+                    </div>
+
+                    <!-- Stats item -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="stat d-flex flex-column align-items-center text-center stagger_stats">
+                            <div class="stat_icon_container d-flex flex-column align-items-center justify-content-center">
+                                <img src="images/features_5.svg" alt="An icon showing a magic wand.">
+                            </div>
+                            <h3>100+</h3>
+                            <p>Certified Trainers</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team" id="team" aria-labelledby="team-heading">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="section_title_container text-center">
+                        <h2 class="section-title reveal_2" id="team-heading">Our Core Team</h2>
+                        <p class="section-subtext reveal_2">A passionate team of certified trainers and coaches who guide your journey with experience and professionalism.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row team_row">
+
+                <!-- Team Item -->
+                <div class="col-xl-3 col-md-6">
+                    <figure class="team_item stagger_team">
+                        <div class="team_item_container">
+                            <div class="team_overlay"></div>
+                            <div class="team_photo">
+                                <img src="images/team_1.webp" alt="Portrait of Monica Maier - Strength Trainer">
+                            </div>
+                            <figcaption class="team_content text-center trans_400">
+                                <h3 class="team_title text-center">
+                                    <a href="#">Monica Maier</a>
+                                </h3>
+                                <div class="team_content_extra trans_300">
+                                    <p class="team_desc">Sed do eiusmod tempor incidi dunt ut labore ul tempor.</p>
+                                    <ul class="team_social_container d-flex flex-row align-items-center justify-content-center">
+                                        <li><a href="#" aria-label="Twitter-X"><i class="fa-brands fa-x-twitter trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram trans_300"></i></a></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <!-- Team Item -->
+                <div class="col-xl-3 col-md-6">
+                    <figure class="team_item stagger_team">
+                        <div class="team_item_container">
+                            <div class="team_overlay"></div>
+                            <div class="team_photo">
+                                <img src="images/team_2.webp" alt="Portrait of Jørgen Hansen - Fitness Trainer">
+                            </div>
+                            <figcaption class="team_content text-center trans_400">
+                                <h3 class="team_title text-center">
+                                    <a href="#">Jørgen Hansen</a>
+                                </h3>
+                                <div class="team_content_extra trans_300">
+                                    <p class="team_desc">Sed do eiusmod tempor incidi dunt ut labore ul tempor.</p>
+                                    <ul class="team_social_container d-flex flex-row align-items-center justify-content-center">
+                                        <li><a href="#" aria-label="Twitter-X"><i class="fa-brands fa-x-twitter trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram trans_300"></i></a></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <!-- Team Item -->
+                <div class="col-xl-3 col-md-6">
+                    <figure class="team_item stagger_team">
+                        <div class="team_item_container">
+                            <div class="team_overlay"></div>
+                            <div class="team_photo">
+                                <img src="images/team_3.webp" alt="Portrait of Ana Nielsen  - Boxing Trainer">
+                            </div>
+                            <figcaption class="team_content text-center trans_400">
+                                <h3 class="team_title text-center">
+                                    <a href="#">Ana Nielsen</a>
+                                </h3>
+                                <div class="team_content_extra trans_300">
+                                    <p class="team_desc">Sed do eiusmod tempor incidi dunt ut labore ul tempor.</p>
+                                    <ul class="team_social_container d-flex flex-row align-items-center justify-content-center">
+                                        <li><a href="#" aria-label="Twitter-X"><i class="fa-brands fa-x-twitter trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram trans_300"></i></a></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <!-- Team Item -->
+                <div class="col-xl-3 col-md-6">
+                    <figure class="team_item stagger_team">
+                        <div class="team_item_container">
+                            <div class="team_overlay"></div>
+                            <div class="team_photo">
+                                <img src="images/team_4.webp" alt="Portrait of Fausto Russo - Strength Trainer">
+                            </div>
+                            <figcaption class="team_content text-center trans_400">
+                                <h3 class="team_title text-center">
+                                    <a href="#">Fausto Russo</a>
+                                </h3>
+                                <div class="team_content_extra trans_300">
+                                    <p class="team_desc">Sed do eiusmod tempor incidi dunt ut labore ul tempor.</p>
+                                    <ul class="team_social_container d-flex flex-row align-items-center justify-content-center">
+                                        <li><a href="#" aria-label="Twitter-X"><i class="fa-brands fa-x-twitter trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram trans_300"></i></a></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <!-- Team Item -->
+                <div class="col-xl-3 col-md-6">
+                    <figure class="team_item stagger_team">
+                        <div class="team_item_container">
+                            <div class="team_overlay"></div>
+                            <div class="team_photo">
+                                <img src="images/team_5.webp" alt="Portrait of Alex Bauer - Cardio Trainer">
+                            </div>
+                            <figcaption class="team_content text-center trans_400">
+                                <h3 class="team_title text-center">
+                                    <a href="#">Alex Bauer</a>
+                                </h3>
+                                <div class="team_content_extra trans_300">
+                                    <p class="team_desc">Sed do eiusmod tempor incidi dunt ut labore ul tempor.</p>
+                                    <ul class="team_social_container d-flex flex-row align-items-center justify-content-center">
+                                        <li><a href="#" aria-label="Twitter-X"><i class="fa-brands fa-x-twitter trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram trans_300"></i></a></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <!-- Team Item -->
+                <div class="col-xl-3 col-md-6">
+                    <figure class="team_item stagger_team">
+                        <div class="team_item_container">
+                            <div class="team_overlay"></div>
+                            <div class="team_photo">
+                                <img src="images/team_6.webp" alt="Portrait of Maria - Yoga Trainer">
+                            </div>
+                            <figcaption class="team_content text-center trans_400">
+                                <h3 class="team_title text-center">
+                                    <a href="#">Maria Dubois</a>
+                                </h3>
+                                <div class="team_content_extra trans_300">
+                                    <p class="team_desc">Sed do eiusmod tempor incidi dunt ut labore ul tempor.</p>
+                                    <ul class="team_social_container d-flex flex-row align-items-center justify-content-center">
+                                        <li><a href="#" aria-label="Twitter-X"><i class="fa-brands fa-x-twitter trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram trans_300"></i></a></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <!-- Team Item -->
+                <div class="col-xl-3 col-md-6">
+                    <figure class="team_item stagger_team">
+                        <div class="team_item_container">
+                            <div class="team_overlay"></div>
+                            <div class="team_photo">
+                                <img src="images/team_7.webp" alt="Portrait of Diego Navarro - Strength Trainer">
+                            </div>
+                            <figcaption class="team_content text-center trans_400">
+                                <h3 class="team_title text-center">
+                                    <a href="#">Diego Navarro</a>
+                                </h3>
+                                <div class="team_content_extra trans_300">
+                                    <p class="team_desc">Sed do eiusmod tempor incidi dunt ut labore ul tempor.</p>
+                                    <ul class="team_social_container d-flex flex-row align-items-center justify-content-center">
+                                        <li><a href="#" aria-label="Twitter-X"><i class="fa-brands fa-x-twitter trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram trans_300"></i></a></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <!-- Team Item -->
+                <div class="col-xl-3 col-md-6">
+                    <figure class="team_item stagger_team">
+                        <div class="team_item_container">
+                            <div class="team_overlay"></div>
+                            <div class="team_photo">
+                                <img src="images/team_8.webp" alt="Portrait of Sonya Moretti - Cardio Trainer">
+                            </div>
+                            <figcaption class="team_content text-center trans_400">
+                                <h3 class="team_title text-center">
+                                    <a href="#">Sonya Moretti</a>
+                                </h3>
+                                <div class="team_content_extra trans_300">
+                                    <p class="team_desc">Sed do eiusmod tempor incidi dunt ut labore ul tempor.</p>
+                                    <ul class="team_social_container d-flex flex-row align-items-center justify-content-center">
+                                        <li><a href="#" aria-label="Twitter-X"><i class="fa-brands fa-x-twitter trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook trans_300"></i></a></li>
+                                        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram trans_300"></i></a></li>
+                                    </ul>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="cta" aria-labelledby="cta_title">
+        <div class="cta_inner">
+            <img src="images/cta.webp" alt="Motivated gym member showing off their form.">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-6">
+                        <div class="cta_content">
+                            <h2 class="cta_title reveal_2">A Big Offer For New Members</h2>
+                            <p class="cta_highlight reveal_2">50% off</p>
+                            <p class="cta_desc reveal_2">Join today and enjoy half off your first three months. Experience world-class training and top-notch equipment.</p>
+                            <a href="#" class="primary-button cta_button trans_300 reveal_2">
+                                <span class="button-arrow trans_300"><i class="fa-thin fa-chevron-right"></i><i class="fa-thin fa-chevron-right"></i></span>
+                                <span class="button-text trans_300">get started</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter section_dark" id="newsletter" aria-labelledby="newsletter-heading">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="section_title_container text-center">
+                        <h2 class="section-title reveal_2" id="newsletter-heading">Subscribe to our <span>Newsletter</span></h2>
+                        <p class="section-subtext reveal_2">Subscribe for workouts, news, and special offers. Fitness tips and updates delivered weekly.</p>
+                    </div>
+                    <form action="" class="newsletter_form text-center" id="newsletter_form">
+                        <label for="newsletter_input" class="visually-hidden">Email address</label>
+                        <input type="email" name="email" class="newsletter_input reveal_2" id="newsletter_input" placeholder="Your Email Here" required aria-required="true">
+                        <button type="submit" class="newsletter_button reveal_2" id="newsletter_button">
+                            <span class="visually-hidden">Subscribe</span>
+                            <i class="fa-thin fa-chevron-right"></i>
+                            <i class="fa-thin fa-chevron-right"></i>
+                        </button>
+                    </form>
+                    <p class="form-status"></p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-top-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a href="#hero" class="scroll-top"><i class="fa-regular fa-chevron-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row footer_row">
+                <div class="col-lg-6 footer_content_col">
+                    <article class="footer_content">
+                        <div class="logo">
+                            <a href="#" class="d-flex flex-row align-items-center"><img src="images/logo.svg" alt="" aria-hidden="true"><span>Pulse<span>Fit</span></span></a>
+                        </div>
+                        <p class="footer_desc">We're not just a gym — we’re a movement. Backed by expert trainers, cutting-edge equipment, and a supportive community</p>
+                        <ul class="footer_social d-flex flex-row align-items-center" aria-label="Social media">
+                            <li><a href="#" aria-label="Twitter-X"><i class="fa-brands fa-x-twitter trans_300"></i></a></li>
+                            <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook trans_300"></i></a></li>
+                            <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram trans_300"></i></a></li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-lg-2 col-sm-4">
+                    <nav class="footer_nav" aria-label="Main footer navigation">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Classes</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2 col-sm-4">
+                    <nav class="footer_nav" aria-label="classes">
+                        <h3>Classes</h3>
+                        <ul>
+                            <li><a href="#">Fitness</a></li>
+                            <li><a href="#">Crossfit</a></li>
+                            <li><a href="#">HIIT</a></li>
+                            <li><a href="#">Boxing</a></li>
+                            <li><a href="#">Yoga</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2 col-sm-4">
+                    <section class="footer_contact">
+                        <h3 id="footer-contact-heading">Contact</h3>
+                        <address>
+                            <span>20125 Main St, Townsville</span>
+                            <a href="mailto:mail@pulsefit.com">mail@pulsefit.com</a>
+                            <a href="tel:+55550495477">+555 50 49 5477</a>
+                        </address>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom -->
+        <div class="footer_extra">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ul class="privacy_container d-flex flex-row align-items-center justify-content-between">
+                            <li class="copyright">Copyright © 2025 <span>PulseFit</span>, All rights reserved.</li>
+                            <li class="privacy">
+                                <span><a href="#">Privacy Policy</a></span>
+                                <span><a href="#">Terms of Use</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+    </footer>
+</div>
+
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="styles/bootstrap-5.3.3/popper.js"></script>
+<script src="styles/bootstrap-5.3.3/bootstrap.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/gsap/gsap.min.js"></script>
+<script src="plugins/gsap/ScrollTrigger.min.js"></script>
+<script src="plugins/wow/wow.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/photoswipe/photoswipe.umd.min.js"></script>
+<script src="plugins/photoswipe/photoswipe-lightbox.umd.min.js"></script>
+<script src="plugins/lity-2.4.1/lity.min.js"></script>
+<script src="js/about.js"></script>
+</body>
+</html>
