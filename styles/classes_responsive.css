@@ -396,7 +396,7 @@
         padding-left: 12px;
         padding-right: 12px;
         height: auto;
-        aspect-ratio: 1.96;
+        aspect-ratio: 2.3;
     }
     .hero_content
     {
@@ -404,7 +404,7 @@
     }
     .hero-title
     {
-        font-size: 32px;
+        font-size: 24px;
     }
     .breadcrumbs
     {
@@ -592,8 +592,5 @@
 
 @media only screen and (max-width: 400px)
 {
-    .hero-title
-    {
-        font-size: 28px;
-    }
+    
 }
