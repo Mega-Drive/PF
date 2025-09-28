@@ -738,7 +738,6 @@
     }
     .home_slider_container, .home_content_container
     {
-        /* height: 281px !important; */
         height: auto !important;
         aspect-ratio: 1.96;
     }
@@ -917,6 +916,14 @@
     .blog_row
     {
         margin-top: 41px;
+    }
+    .blog_post
+    {
+        border-radius: 10px;
+    }
+    .blog_post_image
+    {
+        border-radius: 10px;
     }
     .blog_post_content
     {
