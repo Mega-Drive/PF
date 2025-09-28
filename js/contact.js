@@ -11,7 +11,7 @@
 5. Reveal Animation
 6. Init Wow
 7. Init Menu
-8. Init Counter
+8. Init Accordion
 
 
 ******************************/
@@ -32,7 +32,7 @@ $(document).ready(function()
 	initReveal();
 	initWow();
 	initMenu();
-	initCounter();
+    initAccordion();
 
 	$(window).on('resize', function()
 	{
@@ -105,6 +105,13 @@ $(document).ready(function()
 			document.querySelector(".form-status").textContent = "Message sent successfully!";
 			document.querySelector(".form-status").classList.add("visible");
 		});
+
+        document.querySelector("#contact_form").addEventListener("submit", function (e)
+		{
+			e.preventDefault();
+			document.querySelector(".form-status-contact").textContent = "Message sent successfully!";
+			document.querySelector(".form-status-contact").classList.add("visible");
+		});
 	}
 
 	/* 
@@ -144,8 +151,7 @@ $(document).ready(function()
 			});
 		};
 
-		set_stagger('.stagger_stats');
-		set_stagger('.stagger_team');
+        set_stagger('.stagger_info');
 
 		let reveal_1 = $('.reveal_1');
 		reveal_1.each((ind, ele_1)=>
@@ -187,60 +193,6 @@ $(document).ready(function()
 			});
 		});
 
-        let reveal_right = $('.reveal_right');
-		ScrollTrigger.batch(reveal_right,
-        {
-            start: "100px bottom",
-            end: "100px top",
-            once: false,
-            onEnter: batch => {
-                gsap.to(batch, 
-                {
-                    left: 0,
-                    duration: 1,
-                    opacity: 1, 
-                    stagger: 0.1,
-                    ease: "power1.out"
-                });
-            },
-            onLeaveBack: batch => {
-                gsap.to(batch, 
-                {
-                    left: 30,
-                    duration: 1,
-                    opacity: 0,
-                    ease: "power1.out"
-                });
-            },
-        });
-
-        let reveal_left = $('.reveal_left');
-		ScrollTrigger.batch(reveal_left,
-        {
-            start: "100px bottom",
-            end: "100px top",
-            once: false,
-            onEnter: batch => {
-                gsap.to(batch, 
-                {
-                    right: 0,
-                    duration: 1,
-                    opacity: 1, 
-                    stagger: 0.1,
-                    ease: "power1.out"
-                });
-            },
-            onLeaveBack: batch => {
-                gsap.to(batch, 
-                {
-                    right: 30,
-                    duration: 1,
-                    opacity: 0,
-                    ease: "power1.out",
-                });
-            },
-        });
-
 		let reveal_3 = $('.reveal_3');
 		reveal_3.each((ind, reveal_3)=>
 		{
@@ -257,7 +209,52 @@ $(document).ready(function()
 				duration: 0.7,
 				opacity: 1,
 				y: 0,
-				delay: 0.75
+				delay: 0.25
+			});
+		});
+
+		let stagger_schedule = $('.schedule_stagger');
+		ScrollTrigger.batch(stagger_schedule,
+		{
+			start: "100px bottom",
+			end: "100px top",
+			once: false,
+			onEnter: batch => {
+				gsap.to(batch, 
+				{
+					duration: 0.3,
+					opacity: 1, 
+					stagger: 0.1,
+					scale: 1,
+					ease: "power3.out"
+				});
+			},
+			onLeaveBack: batch => {
+				gsap.to(batch, 
+				{
+					duration: 0.25,
+					opacity: 0,
+					scale: 0.5
+				});
+			},
+		});
+
+		let reveal_hero = $('.reveal_hero');
+		reveal_hero.each((ind, ele_1)=>
+		{
+			gsap.to(ele_1, 
+			{
+				scrollTrigger:
+				{
+					trigger: ele_1,
+					start: "100px bottom",
+					end: "100px top",
+					toggleActions: "play none none reverse", 
+					markers: false
+				},
+				duration: 0.7,
+				opacity: 1,
+				scale: 1
 			});
 		});
 	}
@@ -301,32 +298,20 @@ $(document).ready(function()
 		});
 	}
 
-	/* 
+    /* 
 
-	8. Init Counter
+	8. Init Accordion
 
 	*/
 
-	function initCounter()
-	{
-		let counters = document.querySelectorAll('.counter span');
-
-		gsap.from(counters, 
-		{
-			textContent: 0,
-			duration: 3,
-			scrollTrigger:
-			{
-				trigger: counters,
-				start: "100px bottom",
-				end: "100px top",
-				toggleActions: "play none none reverse", 
-				markers: false
-			},
-			ease: "power1.in",
-			snap: { textContent: 1 },
-			stagger: 0.15
-		});
-	}
+    function initAccordion()
+    {
+        const acc = $('#faq_accordion');
+        acc.accordionjs(
+        {
+            closeAble: false,
+            slideSpeed  : 300
+        });
+    }
 
 });

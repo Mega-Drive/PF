@@ -65,13 +65,9 @@
 
 @media only screen and (max-width: 1399px)
 {
-    .about_container
+    .schedule-table
     {
-        padding-right: 100px;
-    }
-	.why_us_container
-    {
-        padding-right: 100px;
+        width: 1116px;
     }
 }
 
@@ -90,25 +86,18 @@
 
 @media only screen and (max-width: 1199px)
 {
-    h1
-    {
-        font-size: 56px;
-    }
 	.main-nav ul
     {
         gap: 32px;
     }
-    .about_container
+    .classes_item
     {
-        padding-right: 80px;
+        height: 710px;
+        margin-bottom: 20px;
     }
-    .why_us_container
+    .classes-button-container
     {
-        padding-right: 40px;
-    }
-    .cta_content
-    {
-        padding-left: 0;
+        margin-top: 32px;
     }
 }
 
@@ -191,82 +180,6 @@
     {
         height: 524px;
     }
-    .about_container
-    {
-        padding-right: 0;
-    }
-    .about_pics_container
-    {
-        margin-top: 53px;
-    }
-    .about_pic:first-child,
-    .about_pic:last-child
-    {
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-    .stats_row > div:not(:last-child) .stat::after
-    {
-        display: none;
-    }
-    .stats_row > div:nth-child(odd) .stat::after
-    {
-        display: block;
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%);
-        right: -11px;
-        width: 1px;
-        height: 106px;
-        content: '';
-        background-color: rgba(255,255,255,0.1);
-    }
-    .stats_row > div:not(:nth-last-child(-n + 2)) .stat::before
-    {
-        display: block;
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        transform: translateX(-50%);
-        bottom: -11px;
-        width: 106px;
-        height: 1px;
-        content: '';
-        background-color: rgba(255,255,255,0.1);
-    }
-    .features_image
-    {
-        width: 100%;
-        height: auto !important;
-        aspect-ratio: 1.28888888;
-        margin-top: 60px;
-    }
-    .cta_inner
-    {
-        padding-top: 104px;
-        padding-bottom: 112px;
-    }
-    .cta_title
-    {
-        font-size: 39px;
-        max-width: 400px;
-    }
-    .cta_highlight
-    {
-        font-size: 78px;
-        margin-top: 0;
-    }
-    .cta_inner img
-    {
-        opacity: 0.2;
-    }
     .footer
     {
         padding-top: 54px;
@@ -314,16 +227,15 @@
         max-width: 100%;
         padding-left: 0px;
         padding-right: 0px;
-        font-size: 52px;
     }
     .hero-subtext
     {
         margin-top: 14px;
     }
-    .about_content
+    .classes
     {
-        padding-top: 93px;
-        padding-bottom: 96px;
+        padding-top: 94px;
+        padding-bottom: 102px;
     }
 }
 
@@ -349,76 +261,27 @@
     {
         font-size: 16px;
     }
-	.hero-title
-    {
-        font-size: 44px;
-    }
-    .about
+    .classes
     {
         padding-top: 77px;
         padding-bottom: 84px;
     }
-    .about_pics_container
+    .classes_item
     {
-        height: 450px;
-        margin-top: 41px;
+        height: 800px;
     }
-    .about_button_2
-    {
-        margin-top: 48px;
-    }
-    .features
-    {
-        padding-top: 77px;
-        padding-bottom: 84px;
-    }
-    .features_row
+    .classes_row
     {
         margin-top: 41px;
     }
-    .features_container
+    .classes-button-container
     {
-        gap: 16px;
+        margin-top: 24px;
     }
-    .feature
+    .class-desc
     {
-        width: calc((100% - 16px) / 2);
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    .stats_inner
-    {
-        padding-top: 13px;
-        padding-bottom: 31px;
-    }
-    .stats_row
-    {
-        margin-top: 41px;
-    }
-    .team
-    {
-        padding-top: 77px;
-        padding-bottom: 68px;
-    }
-    .team_row
-    {
-        margin-top: 41px;
-    }
-    .why_us
-    {
-        padding-top: 77px;
-        padding-bottom: 68px;
-    }
-    .cta
-    {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .cta_inner
-    {
-        padding-top: 77px;
-        padding-bottom: 82px;
-        border-radius: 0px;
+        opacity: 1;
+        transform: scale(1);
     }
     .newsletter .section-title span
     {
@@ -514,28 +377,76 @@
         padding-right: 12px;
         padding-top: 60px;
     }
-    .hero-inner
+    .hero-background
     {
-        padding-left: 12px;
-        padding-right: 12px;
         height: auto;
         aspect-ratio: 1.96;
     }
+    .hero_content_container
+    {
+        position: relative !important;
+    }
     .hero_content
     {
-        top: 61%;
+        top: 0;
+        transform: none;
+        margin-top: 24px;
     }
     .hero-title
     {
-        font-size: 32px;
+        font-size: 28px;
+        color: var(--color-text-dark);
     }
-    .breadcrumbs
-    {
-        margin-top: 4px;
-    }
-    .breadcrumbs ol li, .breadcrumbs ol li a
+    .post-meta
     {
         font-size: 16px;
+        margin-top: 16px;
+        color: var(--color-text);
+    }
+    .post-container p:first-child
+    {
+        font-size: 18px;
+    }
+    .post-content
+    {
+        padding-top: 60px;
+        padding-bottom: 84px;
+    }
+    .post-container p:first-child
+    {
+        font-size: 16px;
+    }
+    .post-container blockquote
+    {
+        font-size: 20px;
+    }
+    .post-container h3
+    {
+        font-size: 21px;
+        margin-top: 33px;
+    }
+    .categories ul li a
+    {
+        font-size: 14px;
+        line-height: 36px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .post-container blockquote
+    {
+        font-size: 18px;
+        padding-top: 21px;
+        padding-bottom: 23px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .post-container ul li
+    {
+        font-size: 16px;
+    }
+    .post-container p + blockquote
+    {
+        margin-top: 33px;
     }
     #hamburger
     {
@@ -544,38 +455,6 @@
     .button-arrow i
     {
         font-size: 14px;
-    }
-    .about
-    {
-        padding-top: 77px;
-        padding-bottom: 77px;
-    }
-    .about_container
-    {
-        text-align: center;
-    }
-    .about-container
-    {
-        border-radius: 12px;
-    }
-    .about_pics_container
-    {
-        height: auto;
-        aspect-ratio: 1.1711;
-        gap: 16px;
-    }
-    .about_pic
-    {
-        width: calc((100% - 32px) / 3);
-    }
-    .about_button_2
-    {
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        transform: translateX(-50%);
     }
     .play-btn
     {
@@ -586,33 +465,6 @@
     {
         padding-bottom: 92px;
         padding-top: 84px;
-    }
-    .features_container
-    {
-        flex-direction: column !important;
-    }
-	.feature
-    {
-        width: 100%;
-        border-radius: 12px;
-    }
-    .features_image
-    {
-        margin-top: 47px;
-        border-radius: 12px;
-    }
-    .stats
-    {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .stats_inner
-    {
-        border-radius: 0px;
-    }
-    .stats_row
-    {
-        margin-top: 41px;
     }
     .section-title span
     {
@@ -742,6 +594,6 @@
 {
     .hero-title
     {
-        font-size: 28px;
+        font-size: 24px;
     }
 }
