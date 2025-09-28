@@ -569,6 +569,10 @@
     {
         width: calc((100% - 32px) / 3);
     }
+    .about_pic > div
+    {
+        border-radius: 10px;
+    }
     .about_button_2
     {
         left: 50%;
@@ -582,6 +586,10 @@
     {
         width: 72px;
         height: 72px;
+    }
+    .team_item_container
+    {
+        border-radius: 10px;
     }
     .features
     {
