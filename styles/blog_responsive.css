@@ -261,28 +261,6 @@
     {
         font-size: 16px;
     }
-    .classes
-    {
-        padding-top: 77px;
-        padding-bottom: 84px;
-    }
-    .classes_item
-    {
-        height: 800px;
-    }
-    .classes_row
-    {
-        margin-top: 41px;
-    }
-    .classes-button-container
-    {
-        margin-top: 24px;
-    }
-    .class-desc
-    {
-        opacity: 1;
-        transform: scale(1);
-    }
     .newsletter .section-title span
     {
         font-size: 32px;
@@ -380,7 +358,8 @@
     .hero-background
     {
         height: auto;
-        aspect-ratio: 2.3;
+        aspect-ratio: 2.6;
+        border-radius: 10px;
     }
     .hero_content_container
     {
@@ -411,6 +390,10 @@
     .post-container p:first-child
     {
         font-size: 18px;
+    }
+    .post-container img
+    {
+        border-radius: 10px;
     }
     .post-content
     {
