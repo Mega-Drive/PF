@@ -563,11 +563,11 @@
     {
         height: auto;
         aspect-ratio: 1.1711;
-        gap: 16px;
+        gap: 12px;
     }
     .about_pic
     {
-        width: calc((100% - 32px) / 3);
+        width: calc((100% - 24px) / 3);
     }
     .about_pic > div
     {
