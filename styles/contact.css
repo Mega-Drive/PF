@@ -550,7 +550,9 @@ body.no-scroll
 {
 	overflow: hidden;
 }
-.stagger_info
+.stagger_info,
+.stagger_contact_social,
+.stagger_contact_form
 {
 	translate: none;
 	rotate: none;
