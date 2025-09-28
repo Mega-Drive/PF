@@ -7,7 +7,14 @@
 
 1. Fonts
 2. Body and some general stuff
-
+3. Menu
+4. Header
+5. Hero
+6. FAQ
+7. Info
+8. Contact
+9. Newsletter
+10. Footer
 
 
 ******************************/
@@ -1535,7 +1542,7 @@ dd
 }
 
 /*********************************
-17. Newsletter
+9. Newsletter
 *********************************/
 
 .newsletter
@@ -1695,7 +1702,7 @@ dd
 }
 
 /*********************************
-18. Footer
+10. Footer
 *********************************/
 
 .footer

@@ -7,7 +7,12 @@
 
 1. Fonts
 2. Body and some general stuff
-
+3. Menu
+4. Header
+5. Hero
+6. Blog
+7. Newsletter
+8. Footer
 
 
 ******************************/
@@ -1094,7 +1099,7 @@ body.no-scroll
 }
 
 /*********************************
-17. Newsletter
+7. Newsletter
 *********************************/
 
 .newsletter
@@ -1254,7 +1259,7 @@ body.no-scroll
 }
 
 /*********************************
-18. Footer
+8. Footer
 *********************************/
 
 .footer

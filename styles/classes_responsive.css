@@ -292,6 +292,11 @@
         opacity: 1;
         transform: scale(1);
     }
+    .schedule
+    {
+        padding-top: 77px;
+        padding-bottom: 84px;
+    }
     .newsletter .section-title span
     {
         font-size: 32px;

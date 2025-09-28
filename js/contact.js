@@ -152,6 +152,8 @@ $(document).ready(function()
 		};
 
         set_stagger('.stagger_info');
+        set_stagger('.stagger_contact_social');
+        set_stagger('.stagger_contact_form');
 
 		let reveal_1 = $('.reveal_1');
 		reveal_1.each((ind, ele_1)=>

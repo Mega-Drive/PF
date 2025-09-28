@@ -403,6 +403,11 @@
         margin-top: 16px;
         color: var(--color-text);
     }
+    .post-meta > *:not(:last-child)::after
+    {
+        color: var(--color-text);
+        font-size: 16px;
+    }
     .post-container p:first-child
     {
         font-size: 18px;

@@ -7,7 +7,22 @@
 
 1. Fonts
 2. Body and some general stuff
-
+3. Menu
+4. Header
+5. Hero
+6. Classes
+7. About
+8. Features
+9. Stats
+10. Team
+11. Pricing
+12. Why Choose Us
+13. Testimonials
+14. Gallery
+15. CTA
+16. Blog
+17. Newsletter
+18. Footer
 
 
 ******************************/
@@ -1838,22 +1853,6 @@ body.no-scroll
 {
 	background-color: var(--white);
 }
-/* .why_us_slider .owl-stage
-{
-	width: 100% !important;
-	transform: translate3d(0px, 0px, 0px) !important;
-}
-.why_us_slider .owl-item
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 99;
-}
-.why_us_slider .owl-item.active
-{
-	z-index: 100;
-} */
 .why_us_slider .owl-dots
 {
 	display: flex;

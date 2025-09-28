@@ -7,7 +7,13 @@
 
 1. Fonts
 2. Body and some general stuff
-
+3. Menu
+4. Header
+5. Hero
+6. Classes
+7. Schedule
+8. Newsletter
+9. Footer
 
 
 ******************************/
@@ -1146,7 +1152,7 @@ body.no-scroll
 }
 
 /*********************************
-6. Schedule
+7. Schedule
 *********************************/
 
 .schedule
@@ -1350,7 +1356,7 @@ td:hover > div span
 }
 
 /*********************************
-17. Newsletter
+8. Newsletter
 *********************************/
 
 .newsletter
@@ -1510,7 +1516,7 @@ td:hover > div span
 }
 
 /*********************************
-18. Footer
+9. Footer
 *********************************/
 
 .footer
